@@ -295,5 +295,17 @@ section{
     width: 100%; 
 }
 
+.servicesI table tr{
+    height: 60px;
+    line-height: 60px;
+}
 
+.servicesI table tr th{
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.servicesI table tr td{
+    font-size: 1.8em;
+}
 /* #endregion services */
