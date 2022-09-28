@@ -14,8 +14,9 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+body, textarea{
     font-family: 'OpenSans', sans-serif;
+
 }
 
 div{
@@ -103,6 +104,7 @@ section{
     margin-right: 20px;
     color: white;
     margin: 0 auto;
+    border: none;
 }
 
 .btnDefault:hover{
@@ -284,6 +286,7 @@ section{
     text-align: center;
     width: 100%;
     height: auto;
+    margin-bottom: 100px;
 }
 
 .servicesI{
@@ -308,4 +311,136 @@ section{
 .servicesI table tr td{
     font-size: 1.8em;
 }
+
+.servicesI table tr td a{
+    font-size: 1em;
+}
+
+/* even seleciona linhas par */
+tr:nth-child(even){
+    background-color: rgb(179, 164, 173);
+}
+
+/* odd seleciona linhas ímpares */
+tr:nth-child(odd){
+    background-color: rgb(219, 200, 212);
+}
 /* #endregion services */
+
+/* #region domain */
+
+#domain{
+    background-image: url(../img/img7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding: 20em 0;
+}
+
+.domainC{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.domainC li{
+    height: 100px;
+    line-height: 100px;
+}
+
+.domainC li input[type=text]{
+    background-color: rgba(255, 255, 255, .8);
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* #endregion domain */
+
+/* #region localization */
+
+#localization{
+    text-align: center;
+    padding: 5em 0;
+}
+
+
+#localization h2{
+    padding-bottom: 50px;
+}
+
+.localizationC{
+    padding: 5em 0;
+}
+
+/* tema escuro */
+iframe{
+    filter: invert(100%); 
+}
+/* #endregion localization */
+
+/* #region contact */
+
+#contact{
+    background-color: rgb(17,16 ,29);
+    width: 100%;
+    height: auto;
+    padding: 20em 0;
+    color: white;
+    text-align: center;
+}
+
+.contactC{
+    margin: 0 auto;
+    width:  60%;
+}
+
+.contactI{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactI li{
+    padding: 10px;
+}
+
+.contactI li input[type=text],
+.contactI li input[type=email],
+.contactI li input[type=password],
+.contactI li textarea{
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contactI li span{
+    font-size: 2em;
+}
+
+.contactI li input[type=submit],
+.contactI li input[type=reset]{
+    padding: 15px 30px !important;
+    font-size: 2em;
+    margin: 15px;
+}
+/* #endregion  contact */
+
+/* #region footer */
+footer{
+    width: 100%;
+    height: auto;
+    background: black;
+    padding: 50px 0;
+}
+
+
+
+/* #endregion footer */
