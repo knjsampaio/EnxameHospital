@@ -220,21 +220,24 @@
             <section id="contact">
                 <h2>Contact</h2>
                 <div class="contactC">
-                    <ul class="contactI">
-                        <li><input type="text" placeholder="Nome" autocomplete="off" required></li>
-                        <li><input type="email" placeholder="Email" autocomplete="off" required></li>
-                        <li><textarea placeholder="Send your message:" cols="30" rows="10"></textarea></li>
-                        <li>
-                        <input class="btnDefault" type="submit" value="Submit">
-                        <input class="btnDefault" type="reset" value="cancel">
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <span>
-                                I accept the agreement terms
-                            </span>
-                        </li>
-                    </ul>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <ul class="contactI">
+                            <li><input type="text" name="name" placeholder="Nome" autocomplete="off" required></li>
+                            <li><input type="email" name="name" placeholder="Email" autocomplete="off" required></li>
+                            <li><textarea name="message" placeholder="Send your message:" cols="30" rows="10"></textarea></li>
+                            <li>
+                            <input class="btnDefault" type="submit" value="Submit">
+                            <input class="btnDefault" type="reset" value="cancel">
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>
+                                    I accept the agreement terms
+                                </span>
+                            </li>
+                        </ul>
+                            <input type="hidden" name="accessKey" value="50b37918-d73a-4d3e-91c0-87ba07e9d8f5">
+                    </form>
                 </div>
             </section>
         </main>
